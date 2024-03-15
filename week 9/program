@@ -1,0 +1,41 @@
+name = input("What is your name?")
+print("Hello",  name)
+
+def greet(name):
+    print("Good afternoon" , name)
+greet("Hellen")    
+greet("Andrew")
+greet("Ian")
+
+
+fn = input("Enter your full name")
+greet(fn)
+
+def calculate_total_revenue( tn:float, gr:float ,dn:float,pj:float ):
+    tuition = tn +gr+ dn+pj
+    return tuition
+print(calculate_total_revenue(6.0, 4.2 ,2.7, 3.3))
+print(calculate_total_revenue(4.5, 2.7, 3.0, 6.5))
+total_revenue = calculate_total_revenue(4.5, 2.2, 5.6, 6.5)
+print(total_revenue)
+
+
+
+def gr (name):
+    print("How are you!", name)
+#compute coursework
+def cw(t1:int , t2: int , t3: int) ->int:
+    cwmrk = (t1 + t2 + t3)/3    
+    return cwmrk
+#compute exam
+def ex(pr:int, th:int) -> int:
+    exmrk = pr +th
+    return exmrk
+
+print("Welcome to the results app")
+stname = input("Please put your name")
+gr("stname")
+test1 = int(input("Enter score for test 1"))
+test2 = int(input("Enter score for test 2 "))
+test3 = int(input("Enter score for test 3"))
+cw(test1, test2, test3)

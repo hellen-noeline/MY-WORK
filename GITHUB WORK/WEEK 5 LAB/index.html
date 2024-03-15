@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script src="script.js"></script>
+<script>
+    function validateForm() {
+    let x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+  } 
+</script>
+<body>
+    <h2>The confirm() method</h2>
+    <p>Click the button to display a confirm box.</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+          let text;
+          if (confirm("Press a button!") == true) {
+            text = "You pressed OK!";
+          } else {
+            text = "You canceled!";
+          }
+          document.getElementById("demo").innerHTML = text;
+        }
+        </script>
+
+<h3>JavaScript Validation</h3>
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
